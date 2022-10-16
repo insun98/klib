@@ -1,6 +1,6 @@
 # Klib: a Generic Library in C
-
-## <a name="overview"></a>Overview
+ 
+ ## <a name="overview"></a>Overview
 
 Klib is a standalone and lightweight C library distributed under [MIT/X11
 license][1]. Most components are independent of external libraries, except the
