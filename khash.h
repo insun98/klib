@@ -563,7 +563,7 @@ static kh_inline khint_t __ac_Wang_hash(khint_t key)
 		code;												\
 	} }
 
-/*! @function
+/*! @
   @abstract     Iterate over the values in the hash table
   @param  h     Pointer to the hash table [khash_t(name)*]
   @param  vvar  Variable to which value will be assigned

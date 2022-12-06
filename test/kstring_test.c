@@ -37,7 +37,7 @@ void test_kputl(kstring_t *ks, long n)
 	sprintf(buf, "%ld", n);
 	check("kputl()", ks, buf);
 }
-
+	
 static char *mem_gets(char *buf, int buflen, void *vtextp)
 {
 	const char **textp = (const char **) vtextp;
@@ -118,7 +118,7 @@ int main(int argc, char **argv)
 			for (ks.l = 0; kgetline(&ks, (kgets_func *)fgets, f) == 0; ks.l = 0)
 				puts(ks.s);
 			fclose(f);
-		}
+			}
 	}
 
 	free(ks.s);

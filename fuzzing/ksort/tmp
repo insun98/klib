@@ -1,0 +1,35 @@
+	FILE *fd ;
+	char line[MAX_LEN], *result;
+	int i, N;
+	int *array, *ksmall, *introsort, *combsort, *mergesort, *heapsort;
+	
+	/* Read Data */
+	if((fd = fopen(argv[1], "rb")) == NULL){
+		exit(1);
+	}
+	
+	if((result = fgets(line, MAX_LEN, fd)) == NULL){
+		return 0;
+	}
+
+	N = atoi(line);
+	if(N < 0) exit(1);
+	
+	ksmall = (int*)malloc(sizeof(int) * N);
+	introsort = (int*)malloc(sizeof(int) * N);
+	mergesort = (int*)malloc(sizeof(int) * N);
+	combsort = (int*)malloc(sizeof(int) * N);
+	heapsort = (int*)malloc(sizeof(int) * N);
+	array = (int*)malloc(sizeof(int) * N);
+	
+	for (i = 0; i < N; ++i) {
+			result = fgets(line, MAX_LEN, fd);
+			if(result == NULL) exit(1);
+			int data = atoi(line);
+			array[i] = data;
+			ksmall[i] = data;
+			introsort[i] = data;
+			combsort[i] = data;
+			mergesort[i] = data;
+			heapsort[i] = data;
+	}
